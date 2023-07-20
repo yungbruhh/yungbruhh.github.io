@@ -5,6 +5,7 @@
     <body style="background-color:#0f0f0f;">
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/stuff/favicon.ico">
     <meta content="slya" property="og:title"/>
     <meta content="baby tron's biggest fan" property="og:description"/>
     <meta content="https://sslyaa.github.io" property="og:url"/>
@@ -38,20 +39,17 @@
         <a href="https://t.me/kyahh", class="button">telegram</a>
         <br>
         <a href="https://cash.app/$VarxryX", class="button">cashapp</a>
-        <br>
-        <br>
-        <iframe width="1" height="1" wmode="transparent" src="//www.youtube.com/embed/34j3-HI4X5E?autoplay=1&loop=1&playlist=34j3-HI4X5E" frameborder="0" allowfullscreen>
-        <br>
-        <iframe width="315" height="560" src="https://youtube.com/embed/hvfYKfNiSGM" frameborder="0" allowfullscreen>
-        </iframe>
-      </div> 
+      </div>
+      <audio id="music" src="./stuff/music.mp3" loop></audio>audio>
     </center>
     <script>
         document.getElementById("continuebutton").addEventListener("click", function() {
-      document.getElementById("continuebutton").style.display = "none";
-      document.getElementById("restofsite").style.display = "block";
-    
-    });
+          document.getElementById("continuebutton").style.display = "none";
+          document.getElementById("restofsite").style.display = "block"; 
+          const audioplayer = document.getElementById("music");
+          audioplayer.play();
+          audioplayer.loop = true:
+        });
     </script>
   </body>
 </html>
