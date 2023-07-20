@@ -40,18 +40,18 @@
         <br>
         <a href="https://cash.app/$VarxryX", class="button">cashapp</a>
       </div>
-      <audio controls id="music">
+      <audio id="musicplayer">
         <source src="./stuff/music.mp3" type="audio/mpeg">
       </audio>
     </center>
     <script>
-        document.getElementById("continuebutton").addEventListener("click", function() {
-          document.getElementById("continuebutton").style.display = "none";
-          document.getElementById("restofsite").style.display = "block"; 
-          const audioplayer = document.getElementById("music");
-          audioplayer.play();
-          audioplayer.loop = true:
-        });
+      document.getElementById("continuebutton").addEventListener("click", function() {
+        document.getElementById("continuebutton").style.display = "none";
+        document.getElementById("restofsite").style.display = "block";
+        const audioPlayer = document.getElementById("musicplayer");
+        audioPlayer.play();
+        audioPlayer.loop = true;
+      });
     </script>
   </body>
 </html>
