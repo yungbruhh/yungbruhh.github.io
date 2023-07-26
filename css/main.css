@@ -4,9 +4,9 @@ html, body {
     padding: 30px;
     margin: auto;
     width: 200px;
-    height: 200px;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
+    margin-bottom: 200px;
 }
 
 .title {
