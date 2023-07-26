@@ -9,7 +9,7 @@ html, body {
     justify-content: center;
     width: 100px;
     height: 100vh;
-    margin: 0;
+    margin: auto;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
 }
