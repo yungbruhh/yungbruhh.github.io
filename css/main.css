@@ -2,9 +2,9 @@
 
 html, body {
     padding: 30px;
-    width: 100px;
-    height: 100px;
     margin: auto;
+    width: 200px;
+    height: 200px;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
 }
