@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>blake</title>
+    <body style="background-color:#0f0f0f;">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./stuff/favicon.ico">
+    <meta content="blake" property="og:title" />
+    <meta content="rawr :3" property="og:description" />
+    <meta content="https://snoopy.wtf/blake" property="og:url" />
+    <meta content="#2f3136" data-react-helmet="true" name="theme-color" />
+    <style>
+      .button {
+        background-color: #0f0f0f;
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }   
+      
+      .glow-button {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .glow-button::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px white;
+        opacity: 0;
+        animation: glowing 2s infinite;
+      }
+
+      @keyframes glowing {
+        0% {
+          opacity: 0.4;
+          box-shadow: 0 0 10px white;
+        }
+        50% {
+          opacity: 1;
+          box-shadow: 0 0 20px white;
+        }
+        100% {
+          opacity: 0.4;
+          box-shadow: 0 0 10px white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <button class="glow-button" id="continuebutton">click to continue</button>
+      <div id="restofsite" style="display: none;">
+        <h1 style="color: white">blake</h1>
+        <img src="https://cdn.discordapp.com/attachments/1133423979659546755/1133649547000819772/IMG_0275.png", height="150", width="150">
+        <br>
+        <br>
+        <a href="https://flipd.gg/blake", class="button">flipd</a>
+        <br>
+        <a href="https://t.me/blakesvouches", class="button">vouches</a>
+        <br>
+        <br>
+        <a href="https://discord.com/users/275494481648680961" class="button">discord</a>
+        <br>
+        <a href="https://t.me/grouty", class="button">telegram</a>
+        <br>
+        <a href="https://t.me/blakeogu", class="button">crypto</a>
+      </div>
+    </center>
+    <audio id="musicplayer">
+      <source src="./other/blake.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      document.getElementById("continuebutton").addEventListener("click", function() {
+        document.getElementById("continuebutton").style.display = "none";
+        document.getElementById("restofsite").style.display = "block";
+        const audioPlayer = document.getElementById("musicplayer");
+        audioPlayer.play();
+        audioPlayer.loop = true;
+      });
+    </script>
+  </body>
+</html>
