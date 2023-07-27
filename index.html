@@ -59,13 +59,26 @@
           box-shadow: 0 0 10px white;
         }
       }
+
+      @keyframes rainbow-animation {
+        0% { background-position: 0 0; }
+        100% { background-position: 100% 0; }
+      }
+      
+      .rainbow-text {
+        background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow-animation 5s linear infinite;
+      }
     </style>
   </head>
   <body>
     <center>
       <button class="glow-button" id="continuebutton">click to continue</button>
       <div id="restofsite" style="display: none;">
-        <h1 style="color: white">conducts</h1>
+        <h1 class="rainbow-text">conducts</h1>
         <img src="https://cdn.discordapp.com/attachments/1133882884458041415/1133902786858340462/IMG_0281.jpg", height="150", width="150">
         <br>
         <br>
@@ -77,7 +90,6 @@
         <a href="https://discord.com/users/527196802932539403" class="button">discord</a>
         <br>
         <a href="https://t.me/bitcoinattractsfemales", class="button">telegram</a>
-        
       </div>
     </center>
     <audio id="musicplayer">
